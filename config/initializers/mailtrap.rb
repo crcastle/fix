@@ -1,6 +1,6 @@
 if ENV['MAILTRAP_API_TOKEN']
   require 'rubygems' if RUBY_VERSION < '1.9'
-  require 'rest_client'
+  require 'rest-client'
   require 'json'
 
   response = RestClient.get "https://mailtrap.io/api/v1/inboxes.json?api_token=#{ENV['MAILTRAP_API_TOKEN']}"
