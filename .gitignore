@@ -21,3 +21,4 @@
 # Ignore build artifacts.
 /app/compiled_views
 /public/assets
+/vendor/gems
