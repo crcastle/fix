@@ -8,7 +8,7 @@ class CreateSalesforcePricebookentryAgain < ActiveRecord::Migration
         add_column :pricebookentry, :product2__spree_id__c, "varchar(14)"
         # t.column :name, "varchar(255)"
         # t.float :unitprice
-      end
+      # end
     end
   end
 
