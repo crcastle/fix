@@ -10,7 +10,7 @@ class CreateSalesforceLineItemAgain < ActiveRecord::Migration
         add_column :lineitem__c, :product_id__r__spree_id__c, "varchar(14)"
         add_column :lineitem__c, :order_id__c, "varchar(18)"
         add_column :lineitem__c, :order_id__r__spree_id__c, "varchar(14)"
-        add_column :lineitem__c, :spree_id__c, "varchar(14)"
+        # add_column :lineitem__c, :spree_id__c, "varchar(14)"
       # end
     end
   end
@@ -24,7 +24,6 @@ class CreateSalesforceLineItemAgain < ActiveRecord::Migration
       remove_column :lineitem__c, :product_id__r__spree_id__c
       remove_column :lineitem__c, :order_id__c
       remove_column :lineitem__c, :order_id__r__spree_id__c
-      remove_column :lineitem__c, :spree_id__c
     end
   end
 end
