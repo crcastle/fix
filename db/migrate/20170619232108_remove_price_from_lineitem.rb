@@ -1,4 +1,4 @@
-class RemovePriceFromLineItem < ActiveRecord::Migration
+class RemovePriceFromLineitem < ActiveRecord::Migration
   def up
     return if ENV["DEPLOYMENT"] != "production"
     HerokuConnect.change_schema("salesforce") do
